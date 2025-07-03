@@ -20,6 +20,7 @@
 ```bash
 git clone https://github.com/your-username/nsfw_moderator.git
 cd nsfw_moderator
+```
 
 ### 2. Создайте и активируй виртуальное окружение
 
