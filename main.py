@@ -36,7 +36,7 @@ async def moderate_image(file: UploadFile = File(...)):
     raise HTTPException(status_code=500, detail='Hugging Face API error')
 
   result = response.json()
-  print('🔧 API Response:', result)
+  print('API Response:', result)
 
   nsfw_score = 0.0
   for item in result:
