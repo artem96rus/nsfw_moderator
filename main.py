@@ -32,7 +32,7 @@ async def moderate_image(file: UploadFile = File(...)):
     response = requests.post(url, headers=headers, json=data)
     response.raise_for_status()
   except requests.exceptions.RequestException as e:
-    print('❌ Hugging Face API error:', str(e))
+    print(' Hugging Face API error:', str(e))
     raise HTTPException(status_code=500, detail='Hugging Face API error')
 
   result = response.json()
